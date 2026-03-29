@@ -8,6 +8,7 @@
 name:     Dani A
 school:   University of Wisconsin — Madison
 status:   Full-time CS Student
+intern:   Amazon SDE Intern — Summer 2026
 site:     almalaki.dev
 focus:
   - Full-stack web development
@@ -51,8 +52,8 @@ focus:
 ### 📊 Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=acetodani&show_icons=true&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f&icon_color=5ba4d4&rank_icon=github" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acetodani&layout=compact&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f" height="165"/>
+  <img src="https://streak-stats.demolab.com/?user=acetodani&hide_border=true&background=eef4fb&stroke=5ba4d4&ring=5ba4d4&fire=3d8dbf&currStreakNum=0f2a4a&sideNums=0f2a4a&currStreakLabel=4a7fa5&sideLabels=4a7fa5&dates=4a7fa5" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acetodani&layout=compact&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f&langs_count=6" height="165"/>
 </div>
 
 <div align="center">
