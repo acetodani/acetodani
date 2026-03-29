@@ -1,17 +1,18 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=5ba4d4&height=200&section=header&text=hey,%20I'm%20Dani%20👋&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%40%20Amazon&descSize=18&descAlignY=58&descColor=eef4fb" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=5ba4d4&height=200&section=header&text=hey,%20I'm%20Dani%20👋&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=CS%20Student%20%40%20UW%20Madison&descSize=18&descAlignY=58&descColor=eef4fb" width="100%" />
 </div>
 
 <br/>
 
 ```yaml
-name:     Dani Al-Malaki
-role:     Software Engineer @ Amazon
-location: Madison, WI
+name:     Dani A
+school:   University of Wisconsin — Madison
+status:   Full-time CS Student
 site:     almalaki.dev
 focus:
-  - Building tools that make data easier to understand
-  - Web apps · Hardware projects · Clean UIs
+  - Full-stack web development
+  - Data visualization & tooling
+  - Hardware & embedded systems
 ```
 
 <br/>
@@ -42,7 +43,6 @@ focus:
 |--------|---------|-------------|
 | 📊 | [csv-analyzer](https://github.com/acetodani/csv-analyzer) | Drop any CSV → instant interactive charts. No signup, 100% private. |
 | 🌐 | [personal-web](https://github.com/acetodani/personal-web) | Personal website |
-| 🎵 | [wake-crush](https://github.com/acetodani/wake-crush) | Raspberry Pi alarm clock with music & album art on a 3" screen |
 
 <br/>
 
