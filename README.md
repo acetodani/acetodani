@@ -1,41 +1,74 @@
 <div align="center">
-  <h1>hey, I'm dani 👋</h1>
-  <p>Software engineer @ Amazon · Madison, WI · <a href="https://almalaki.dev">almalaki.dev</a></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=5ba4d4&height=200&section=header&text=hey,%20I'm%20Dani%20👋&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%40%20Amazon&descSize=18&descAlignY=58&descColor=eef4fb" width="100%" />
 </div>
 
----
+<br/>
 
-### About me
+```yaml
+name:     Dani Al-Malaki
+role:     Software Engineer @ Amazon
+location: Madison, WI
+site:     almalaki.dev
+focus:
+  - Building tools that make data easier to understand
+  - Web apps · Hardware projects · Clean UIs
+```
 
-- 🏢 Working at **Amazon**
-- 🛠️ Building tools that make data easier to understand
-- 🌐 Personal site: [almalaki.dev](https://almalaki.dev)
-
----
-
-### Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [csv-analyzer](https://github.com/acetodani/csv-analyzer) | Drop any CSV → instant interactive charts. No signup, 100% private. | JavaScript, Chart.js |
-| [personal-web](https://github.com/acetodani/personal-web) | Personal website | TypeScript |
-| [wake-crush](https://github.com/acetodani/wake-crush) | Raspberry Pi alarm clock with music & album art on a 3" screen | Python, Hardware |
+<br/>
 
 ---
 
-### GitHub Stats
+### 🛠 Tech & Tools
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="36" title="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="36" title="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="36" title="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="36" title="Java"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="36" title="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="36" title="Node.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="36" title="Git"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="36" title="Linux"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" width="36" title="Raspberry Pi"/>
+</div>
+
+<br/>
+
+---
+
+### 📌 Projects
+
+| &nbsp; | Project | Description |
+|--------|---------|-------------|
+| 📊 | [csv-analyzer](https://github.com/acetodani/csv-analyzer) | Drop any CSV → instant interactive charts. No signup, 100% private. |
+| 🌐 | [personal-web](https://github.com/acetodani/personal-web) | Personal website |
+| 🎵 | [wake-crush](https://github.com/acetodani/wake-crush) | Raspberry Pi alarm clock with music & album art on a 3" screen |
+
+<br/>
+
+---
+
+### 📊 Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=acetodani&show_icons=true&theme=default&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f&icon_color=5ba4d4" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acetodani&layout=compact&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api?username=acetodani&show_icons=true&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f&icon_color=5ba4d4&rank_icon=github" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acetodani&layout=compact&hide_border=true&bg_color=eef4fb&title_color=0f2a4a&text_color=1e3a5f" height="165"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=acetodani&bg_color=eef4fb&color=1e3a5f&line=5ba4d4&point=5ba4d4&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=acetodani&bg_color=eef4fb&color=0f2a4a&line=5ba4d4&point=3d8dbf&hide_border=true&radius=6" width="100%"/>
 </div>
+
+<br/>
 
 ---
 
 <div align="center">
-  <sub>Made with ☕ in Madison, WI</sub>
+  <a href="https://almalaki.dev">
+    <img src="https://img.shields.io/badge/almalaki.dev-5ba4d4?style=for-the-badge&logo=safari&logoColor=white"/>
+  </a>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=5ba4d4&height=100&section=footer" width="100%"/>
 </div>
