@@ -16,16 +16,13 @@
 ### about me
 
 ```
-📍  madison, wi
-🎓  cs @ uw-madison (junior)
+🎓  cs @ uw-madison (sophomore)
 💼  amazon sde intern — summer 2026
 📷  sony a7iv shooter with too many primes
 🔨  building glassstat — adding CLIP ML pipeline rn
 ```
 
 ---
-
-### featured
 
 <a href="https://github.com/acetodani/glassstat">
   <img src="assets/glassstat-card.svg" width="100%" alt="glassstat"/>
@@ -34,7 +31,7 @@
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=acetodani&layout=donut&hide_border=true&bg_color=ffffff&title_color=1a1a1a&text_color=333&ring_color=E3000B" height="180"/>
+  <img src="assets/languages.svg" height="200"/>
 </p>
 
 ---

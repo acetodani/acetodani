@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none">
+  <!-- Donut chart with LEGO colors -->
+  <!-- TypeScript: 45% = 162deg, JavaScript: 30% = 108deg, Python: 15% = 54deg, Java: 10% = 36deg -->
+
+  <!-- Background ring -->
+  <circle cx="120" cy="100" r="70" fill="none" stroke="#f0f0f0" stroke-width="28"/>
+
+  <!-- Java — yellow (starts at 0) -->
+  <circle cx="120" cy="100" r="70" fill="none"
+    stroke="#F5CD2F" stroke-width="28"
+    stroke-dasharray="36 324"
+    stroke-dashoffset="0"
+    transform="rotate(-90 120 100)"/>
+
+  <!-- Python — green (starts at 36) -->
+  <circle cx="120" cy="100" r="70" fill="none"
+    stroke="#00852B" stroke-width="28"
+    stroke-dasharray="54 306"
+    stroke-dashoffset="-36"
+    transform="rotate(-90 120 100)"/>
+
+  <!-- JavaScript — red/orange (starts at 90) -->
+  <circle cx="120" cy="100" r="70" fill="none"
+    stroke="#E3000B" stroke-width="28"
+    stroke-dasharray="108 252"
+    stroke-dashoffset="-90"
+    transform="rotate(-90 120 100)"/>
+
+  <!-- TypeScript — blue (starts at 198) -->
+  <circle cx="120" cy="100" r="70" fill="none"
+    stroke="#006CB7" stroke-width="28"
+    stroke-dasharray="162 198"
+    stroke-dashoffset="-198"
+    transform="rotate(-90 120 100)"/>
+
+  <!-- Center hole -->
+  <circle cx="120" cy="100" r="56" fill="white"/>
+
+  <!-- Legend -->
+  <rect x="220" y="55" width="12" height="12" rx="3" fill="#006CB7"/>
+  <text x="238" y="65" font-family="system-ui, sans-serif" font-size="12" fill="#333">TypeScript</text>
+
+  <rect x="220" y="80" width="12" height="12" rx="3" fill="#E3000B"/>
+  <text x="238" y="90" font-family="system-ui, sans-serif" font-size="12" fill="#333">JavaScript</text>
+
+  <rect x="220" y="105" width="12" height="12" rx="3" fill="#00852B"/>
+  <text x="238" y="115" font-family="system-ui, sans-serif" font-size="12" fill="#333">Python</text>
+
+  <rect x="220" y="130" width="12" height="12" rx="3" fill="#F5CD2F"/>
+  <text x="238" y="140" font-family="system-ui, sans-serif" font-size="12" fill="#333">Java</text>
+</svg>
