@@ -1,88 +1,38 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,12,20&height=210&section=header&text=hey,%20I'm%20Dani%20👋&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=CS%20Student%20%40%20UW%20Madison&descSize=18&descAlignY=58&descColor=d0eaff" width="100%" />
-</div>
+# Dani Almalaki
 
-<br/>
-
-```yaml
-name:     Dani A
-school:   University of Wisconsin — Madison
-status:   Full-time CS Student
-intern:   Amazon SDE Intern — Summer 2026
-site:     almalaki.dev
-focus:
-  - Full-stack web development
-  - Data visualization & tooling
-  - Hardware & embedded systems
-```
-
-<br/>
+I build tools that turn data into something you actually want to look at. CS student at UW-Madison, incoming Amazon SDE intern, and photographer who got tired of not knowing which lens earns its spot in the bag.
 
 ---
 
-### 🛠 Tech & Tools
+### now
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="38" title="JavaScript"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="38" title="TypeScript"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="38" title="Python"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="38" title="Java"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="38" title="React"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="38" title="Node.js"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="38" title="Git"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="38" title="Linux"/>
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" width="38" title="Raspberry Pi"/>
-</div>
-
-<br/>
+- Interning at **Amazon** (Summer 2026) — replication services
+- Finishing junior year at **UW-Madison**, CS
+- Adding ML to [glassstat](https://github.com/acetodani/glassstat) — CLIP embeddings for aesthetic scoring and subject tagging
+- Shooting on a Sony A7IV + too many primes
 
 ---
 
-### 📌 Projects
+### projects
 
-| &nbsp; | Project | Description |
-|--------|---------|-------------|
-| 📊 | [csv-analyzer](https://github.com/acetodani/csv-analyzer) | Drop any CSV → instant interactive charts. No signup, 100% private. |
-| 🌐 | [personal-web](https://github.com/acetodani/personal-web) | Personal website |
+**[glassstat](https://github.com/acetodani/glassstat)** — Spotify Wrapped for your camera gear
 
-<br/>
+> Scan your photo library, get interactive analytics: focal length habits, aperture patterns, time-of-day heatmaps, photographer archetype classification, and a "best photo" score. Privacy-first — nothing leaves your machine.
+>
+> `Python` `FastAPI` `React` `TypeScript` `SQLite` `CLIP` `Recharts`
 
----
+**[csv-analyzer](https://github.com/acetodani/csv-analyzer)** — Drop any CSV, get instant interactive charts
 
-### 📊 Stats
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=acetodani&hide_border=true&background=EEF4FB&stroke=90C8F0&ring=5BA4D4&fire=3D8DBF&currStreakNum=0F2A4A&sideNums=0F2A4A&currStreakLabel=5BA4D4&sideLabels=4A7FA5&dates=90A8BC" height="160"/>
-  &nbsp;&nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=acetodani&theme=nord_bright" height="160"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=acetodani&bg_color=EEF4FB&color=0F2A4A&line=5BA4D4&point=3D8DBF&hide_border=true&radius=6&area=true&area_color=90C8F0" width="100%"/>
-</div>
-
-<br/>
+> No signup, no upload to a server. Runs entirely in the browser.
+>
+> `JavaScript` `D3.js`
 
 ---
 
-<div align="center">
-  <a href="https://almalaki.dev">
-    <img src="https://img.shields.io/badge/almalaki.dev-5BA4D4?style=for-the-badge&logo=safari&logoColor=white"/>
-  </a>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Amazon-Intern%20%7C%20Summer%202026-FF9900?style=for-the-badge&logo=amazon&logoColor=white"/>
-</div>
+### interests
 
-<br/>
+Photography, data visualization, privacy-respecting software, mechanical keyboards, embedded systems.
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,12,20&height=110&section=footer" width="100%"/>
-</div>
+---
+
+<a href="https://almalaki.dev">almalaki.dev</a>
