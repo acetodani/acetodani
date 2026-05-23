@@ -19,13 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: pastel-settings.json
-      - name: Crop to 3D blocks only
-        run: |
-          FILE="profile-3d-contrib/profile-pastel-animate.svg"
-          if [ -f "$FILE" ]; then
-            sed -i 's/viewBox="0 0 \([0-9]*\) [0-9]*"/viewBox="0 0 \1 440"/' "$FILE"
-            sed -i 's/height="[0-9]*"/height="440"/' "$FILE"
-          fi
       - name: Commit & Push
         run: |
           git config user.name github-actions

@@ -31,9 +31,9 @@
 ---
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-pastel-animate.svg" width="100%" alt="3D contribution graph"/>
+  <img src="assets/languages.svg" height="180"/>
 </p>
 
 <p align="center">
-  <img src="assets/languages.svg" height="180"/>
+  <img src="./profile-3d-contrib/profile-pastel-animate.svg" width="100%" alt="3D contribution graph"/>
 </p>
