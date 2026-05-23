@@ -1,52 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
-  <rect width="1200" height="300" fill="#0d1117"/>
+  <rect width="1200" height="300" fill="#0f172a"/>
 
-  <!-- Soft pastel blobs (dimmed for dark) -->
-  <circle cx="1020" cy="70" r="130" fill="#ddd6fe" opacity="0.06"/>
-  <circle cx="1120" cy="200" r="90" fill="#fbcfe8" opacity="0.05"/>
-  <circle cx="880" cy="240" r="60" fill="#a7f3d0" opacity="0.05"/>
-  <circle cx="130" cy="250" r="80" fill="#bae6fd" opacity="0.04"/>
-  <circle cx="220" cy="40" r="50" fill="#fde68a" opacity="0.04"/>
+  <!-- Soft blobs -->
+  <circle cx="1020" cy="70" r="130" fill="#bae6fd" opacity="0.05"/>
+  <circle cx="1130" cy="200" r="90" fill="#fef3c7" opacity="0.04"/>
+  <circle cx="880" cy="250" r="60" fill="#d1fae5" opacity="0.04"/>
+  <circle cx="120" cy="250" r="80" fill="#e0f2fe" opacity="0.03"/>
+  <circle cx="200" cy="40" r="50" fill="#fde68a" opacity="0.03"/>
 
   <!-- Pastel gradient top bar -->
   <defs>
     <linearGradient id="topbar" x1="0" y1="0" x2="1200" y2="0">
-      <stop offset="0%" stop-color="#fbcfe8"/>
-      <stop offset="25%" stop-color="#ddd6fe"/>
-      <stop offset="50%" stop-color="#bae6fd"/>
-      <stop offset="75%" stop-color="#a7f3d0"/>
-      <stop offset="100%" stop-color="#fde68a"/>
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="33%" stop-color="#d1fae5"/>
+      <stop offset="66%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
     </linearGradient>
   </defs>
   <rect x="0" y="0" width="1200" height="5" fill="url(#topbar)"/>
 
   <!-- Scattered shapes -->
-  <circle cx="75" cy="65" r="5" fill="#ddd6fe" opacity="0.3"/>
-  <circle cx="95" cy="90" r="3.5" fill="#fbcfe8" opacity="0.25"/>
-  <circle cx="68" cy="95" r="4" fill="#a7f3d0" opacity="0.25"/>
-  <rect x="85" y="72" width="6" height="6" rx="1.5" fill="#bae6fd" opacity="0.2" transform="rotate(20 88 75)"/>
+  <circle cx="75" cy="65" r="5" fill="#bae6fd" opacity="0.4"/>
+  <circle cx="95" cy="88" r="3.5" fill="#fde68a" opacity="0.3"/>
+  <circle cx="68" cy="92" r="4" fill="#d1fae5" opacity="0.3"/>
 
   <!-- Name -->
-  <text x="120" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#f0f6fc" letter-spacing="-2">Dani Almalaki</text>
+  <text x="120" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#f1f5f9" letter-spacing="-2">Dani Almalaki</text>
 
   <!-- Tagline -->
-  <text x="124" y="195" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="15" fill="#c4b5fd" opacity="0.7" letter-spacing="0.5">building things that make data feel good</text>
+  <text x="124" y="195" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="15" fill="#7dd3fc" opacity="0.7" letter-spacing="0.5">building things that make data feel good</text>
 
   <!-- Pastel dots -->
-  <circle cx="124" cy="230" r="5" fill="#fbcfe8"/>
-  <circle cx="142" cy="230" r="5" fill="#ddd6fe"/>
-  <circle cx="160" cy="230" r="5" fill="#bae6fd"/>
-  <circle cx="178" cy="230" r="5" fill="#a7f3d0"/>
-  <circle cx="196" cy="230" r="5" fill="#fde68a"/>
+  <circle cx="124" cy="230" r="5" fill="#7dd3fc"/>
+  <circle cx="142" cy="230" r="5" fill="#86efac"/>
+  <circle cx="160" cy="230" r="5" fill="#fde68a"/>
+  <circle cx="178" cy="230" r="5" fill="#fbcfe8"/>
+  <circle cx="196" cy="230" r="5" fill="#bae6fd"/>
 
-  <!-- Soft pastel bar chart -->
-  <rect x="880" y="165" width="20" height="45" rx="10" fill="#fbcfe8" opacity="0.7"/>
-  <rect x="908" y="140" width="20" height="70" rx="10" fill="#ddd6fe" opacity="0.7"/>
-  <rect x="936" y="100" width="20" height="110" rx="10" fill="#c4b5fd" opacity="0.85"/>
-  <rect x="964" y="115" width="20" height="95" rx="10" fill="#a7f3d0" opacity="0.7"/>
-  <rect x="992" y="140" width="20" height="70" rx="10" fill="#bae6fd" opacity="0.7"/>
-  <rect x="1020" y="152" width="20" height="58" rx="10" fill="#fde68a" opacity="0.6"/>
-  <rect x="1048" y="130" width="20" height="80" rx="10" fill="#fbcfe8" opacity="0.4"/>
+  <!-- Soft bar chart -->
+  <rect x="880" y="165" width="20" height="45" rx="10" fill="#bae6fd" opacity="0.5"/>
+  <rect x="908" y="140" width="20" height="70" rx="10" fill="#7dd3fc" opacity="0.6"/>
+  <rect x="936" y="100" width="20" height="110" rx="10" fill="#38bdf8" opacity="0.7"/>
+  <rect x="964" y="115" width="20" height="95" rx="10" fill="#86efac" opacity="0.5"/>
+  <rect x="992" y="140" width="20" height="70" rx="10" fill="#fde68a" opacity="0.5"/>
+  <rect x="1020" y="152" width="20" height="58" rx="10" fill="#fbcfe8" opacity="0.4"/>
+  <rect x="1048" y="130" width="20" height="80" rx="10" fill="#bae6fd" opacity="0.3"/>
 
-  <text x="885" y="228" font-family="'SF Mono', monospace" font-size="8" fill="#c4b5fd" opacity="0.4">16   24   35   50   85  135  200</text>
+  <text x="885" y="228" font-family="'SF Mono', monospace" font-size="8" fill="#475569">16   24   35   50   85  135  200</text>
 </svg>

@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://almalaki.dev"><img src="https://img.shields.io/badge/almalaki.dev-c4b5fd?style=flat-square&logo=safari&logoColor=white"/></a>&nbsp;
-  <img src="https://img.shields.io/badge/Amazon-Summer_2026-fcd34d?style=flat-square&logo=amazon&logoColor=white"/>
+  <a href="https://almalaki.dev"><img src="https://img.shields.io/badge/almalaki.dev-7dd3fc?style=flat-square&logo=safari&logoColor=white"/></a>&nbsp;
+  <img src="https://img.shields.io/badge/Amazon-Summer_2026-fde68a?style=flat-square&logo=amazon&logoColor=333"/>
 </p>
 
 ---
