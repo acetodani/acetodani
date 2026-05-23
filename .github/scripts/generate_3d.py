@@ -4,7 +4,6 @@ import json
 import math
 import os
 import sys
-from datetime import datetime, timezone
 
 import requests
 
@@ -16,7 +15,7 @@ RADAR_COLOR = "#006CB7"
 TEXT_COLOR = "#1a1a1a"
 
 CANVAS_W = 1280
-CANVAS_H = 520
+CANVAS_H = 830
 
 
 def graphql(query: str) -> dict:
@@ -81,57 +80,81 @@ def darken(hex_color: str, factor: float) -> str:
 
 
 def generate_3d_blocks(weeks: list) -> str:
-    dx = CANVAS_W / 64
-    dy = dx * math.tan(math.radians(30))
-    dxx = dx * 0.9
-    dyy = dy * 0.9
+    num_weeks = len(weeks)
 
-    skew_angle = math.degrees(math.atan2(dxx / 2, dyy))
-    scale_y = math.cos(math.atan2(dxx / 2, dyy))
+    cell_size = 14
+    gap = 2
+    step = cell_size + gap
+
+    iso_x_week = step * math.cos(math.radians(30))
+    iso_y_week = step * math.sin(math.radians(30))
+    iso_x_day = -step * math.cos(math.radians(30))
+    iso_y_day = step * math.sin(math.radians(30))
+
+    grid_width = num_weeks * iso_x_week + 7 * abs(iso_x_day)
+    origin_x = 7 * abs(iso_x_day) + 40
+    origin_y = 180
 
     elements = []
-    base_x = 120
-    base_y = CANVAS_H - 80
 
-    for wi, week in enumerate(weeks):
-        for di, day in enumerate(week["contributionDays"]):
+    for wi in range(num_weeks):
+        for di in range(len(weeks[wi]["contributionDays"])):
+            day = weeks[wi]["contributionDays"][di]
             count = day["contributionCount"]
             level = level_from_str(day["contributionLevel"])
 
-            height = math.log10(count / 20 + 1) * 144 + 3 if count > 0 else 3
+            height = math.log10(count / 20 + 1) * 100 + 2 if count > 0 else 2
 
-            x = base_x + wi * dxx - di * dxx
-            y = base_y + wi * dyy / 2 + di * dyy / 2
+            x = origin_x + wi * iso_x_week + di * iso_x_day
+            y = origin_y + wi * iso_y_week + di * iso_y_day
 
             color = COLORS[level]
-            color_left = darken(color, 0.85)
-            color_right = darken(color, 0.7)
+            color_left = darken(color, 0.82)
+            color_right = darken(color, 0.65)
 
-            top_transform = f"skewY(-30) skewX({skew_angle:.2f}) scale(1 {scale_y:.4f})"
-            left_transform = f"skewY(30) scale(1 {1:.4f})"
-            right_transform = f"translate({dxx:.2f} {dyy/2:.2f}) skewY(-30) scale(1 {1:.4f})"
+            # Draw 3D block as three polygons (top, left, right)
+            w = cell_size * math.cos(math.radians(30))
+            h_iso = cell_size * math.sin(math.radians(30))
 
-            g = f'<g transform="translate({x:.2f} {y - height:.2f})">'
-
-            # Top face
-            g += f'<rect stroke="none" x="0" y="0" width="{dxx:.2f}" height="{dxx:.2f}" '
-            g += f'transform="{top_transform}" fill="{color}">'
-            g += f'<animate attributeName="height" from="{dxx:.2f}" to="{dxx:.2f}" dur="3s"/>'
-            g += '</rect>'
+            # Top face (parallelogram)
+            top_points = [
+                (x, y - height),
+                (x + w, y - h_iso - height),
+                (x + 2 * w, y - height),
+                (x + w, y + h_iso - height),
+            ]
+            top_str = " ".join(f"{p[0]:.1f},{p[1]:.1f}" for p in top_points)
 
             # Left face
-            g += f'<rect stroke="none" x="0" y="0" width="{dxx:.2f}" height="{height:.2f}" '
-            g += f'transform="{left_transform}" fill="{color_left}">'
-            g += f'<animate attributeName="height" from="3" to="{height:.2f}" dur="3s"/>'
-            g += '</rect>'
+            left_points = [
+                (x, y - height),
+                (x + w, y + h_iso - height),
+                (x + w, y + h_iso),
+                (x, y),
+            ]
+            left_str = " ".join(f"{p[0]:.1f},{p[1]:.1f}" for p in left_points)
 
             # Right face
-            g += f'<rect stroke="none" x="0" y="0" width="{dxx:.2f}" height="{height:.2f}" '
-            g += f'transform="{right_transform}" fill="{color_right}">'
-            g += f'<animate attributeName="height" from="3" to="{height:.2f}" dur="3s"/>'
-            g += '</rect>'
+            right_points = [
+                (x + w, y + h_iso - height),
+                (x + 2 * w, y - height),
+                (x + 2 * w, y),
+                (x + w, y + h_iso),
+            ]
+            right_str = " ".join(f"{p[0]:.1f},{p[1]:.1f}" for p in right_points)
 
-            g += '</g>'
+            anim_dur = "3s"
+            g = ""
+            g += f'<polygon points="{top_str}" fill="{color}" stroke="none">'
+            g += f'<animate attributeName="opacity" values="0;1" dur="{anim_dur}" fill="freeze"/>'
+            g += '</polygon>'
+            g += f'<polygon points="{left_str}" fill="{color_left}" stroke="none">'
+            g += f'<animate attributeName="opacity" values="0;1" dur="{anim_dur}" fill="freeze"/>'
+            g += '</polygon>'
+            g += f'<polygon points="{right_str}" fill="{color_right}" stroke="none">'
+            g += f'<animate attributeName="opacity" values="0;1" dur="{anim_dur}" fill="freeze"/>'
+            g += '</polygon>'
+
             elements.append(g)
 
     return "\n".join(elements)
@@ -156,12 +179,12 @@ def generate_radar(totals: dict) -> str:
 
     elements = []
 
-    # Grid lines (pentagons at each level)
+    # Grid pentagons
     for lv in range(1, levels + 1):
         points = " ".join(f"{pos(lv, i)[0]:.1f},{pos(lv, i)[1]:.1f}" for i in range(5))
         elements.append(
-            f'<polygon points="{points}" fill="none" stroke="#cccccc" '
-            f'stroke-width="1" stroke-dasharray="4,4"/>'
+            f'<polygon points="{points}" fill="none" stroke="#999999" '
+            f'stroke-width="0.8" stroke-dasharray="4,4"/>'
         )
 
     # Axis lines
@@ -169,7 +192,7 @@ def generate_radar(totals: dict) -> str:
         x, y = pos(levels, i)
         elements.append(
             f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" '
-            f'stroke="#cccccc" stroke-width="1"/>'
+            f'stroke="#999999" stroke-width="0.8"/>'
         )
 
     # Scale labels
@@ -177,48 +200,47 @@ def generate_radar(totals: dict) -> str:
     for lv in range(1, levels + 1):
         lx, ly = pos(lv, 0)
         elements.append(
-            f'<text x="{lx:.1f}" y="{ly - 5:.1f}" font-size="11" '
-            f'fill="#999999" text-anchor="middle" '
+            f'<text x="{lx + 5:.1f}" y="{ly:.1f}" font-size="11" '
+            f'fill="#666666" text-anchor="start" '
             f'font-family="sans-serif">{scale_labels[lv-1]}</text>'
         )
 
     # Data polygon
     data_points = []
     for i, (_, value) in enumerate(axes):
-        level = min(levels, math.log10(max(1, value)))
+        level = min(levels, math.log10(max(1, value)) if value > 0 else 0)
         data_points.append(pos(level, i))
 
     points_str = " ".join(f"{p[0]:.1f},{p[1]:.1f}" for p in data_points)
     elements.append(
-        f'<polygon points="{points_str}" fill="{RADAR_COLOR}" fill-opacity="0.4" '
+        f'<polygon points="{points_str}" fill="{RADAR_COLOR}" fill-opacity="0.35" '
         f'stroke="{RADAR_COLOR}" stroke-width="2">'
-        f'<animate attributeName="fill-opacity" values="0;0.4" dur="3s" repeatCount="1"/>'
+        f'<animate attributeName="fill-opacity" values="0;0.35" dur="3s" fill="freeze"/>'
         f'</polygon>'
     )
 
     # Axis labels
-    label_offset = 25
     for i, (name, _) in enumerate(axes):
         x, y = pos(levels, i)
         dx = x - cx
         dy_val = y - cy
         length = math.sqrt(dx * dx + dy_val * dy_val)
         if length > 0:
-            lx = x + (dx / length) * label_offset
-            ly = y + (dy_val / length) * label_offset
+            lx = x + (dx / length) * 25
+            ly = y + (dy_val / length) * 25
         else:
-            lx, ly = x, y - label_offset
+            lx, ly = x, y - 25
 
         anchor = "middle"
-        if lx < cx - 20:
+        if lx < cx - 30:
             anchor = "end"
-        elif lx > cx + 20:
+        elif lx > cx + 30:
             anchor = "start"
 
         elements.append(
             f'<text x="{lx:.1f}" y="{ly:.1f}" font-size="16" font-weight="bold" '
             f'fill="{TEXT_COLOR}" text-anchor="{anchor}" '
-            f'font-family="sans-serif">{name}</text>'
+            f'dominant-baseline="middle" font-family="sans-serif">{name}</text>'
         )
 
     return "\n".join(elements)
@@ -231,7 +253,6 @@ def generate_svg(data: dict) -> str:
     weeks = calendar["weeks"]
     total = calendar["totalContributions"]
 
-    # Date range
     first_date = weeks[0]["contributionDays"][0]["date"]
     last_week = weeks[-1]["contributionDays"]
     last_date = last_week[-1]["date"]
@@ -239,31 +260,30 @@ def generate_svg(data: dict) -> str:
     blocks_svg = generate_3d_blocks(weeks)
     radar_svg = generate_radar(collection)
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CANVAS_W}" height="{CANVAS_H}" viewBox="0 0 {CANVAS_W} {CANVAS_H}">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CANVAS_W}" height="{CANVAS_H}" viewBox="0 0 {CANVAS_W} {CANVAS_H}">
 <style>
   text {{ font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }}
 </style>
+<g>
 {blocks_svg}
+</g>
+<g>
 {radar_svg}
-<text x="{CANVAS_W - 20}" y="20" font-size="14" fill="#999999" text-anchor="end">{first_date} / {last_date}</text>
-<text x="40" y="{CANVAS_H - 20}" font-size="28" font-weight="bold" fill="{TEXT_COLOR}">{total}</text>
-<text x="40" y="{CANVAS_H - 20}" dx="5" font-size="28" fill="{TEXT_COLOR}"> </text>
-<text x="{40 + len(str(total)) * 18}" y="{CANVAS_H - 20}" font-size="18" fill="{TEXT_COLOR}">contributions</text>
-</svg>"""
+</g>
+<text x="{CANVAS_W - 20}" y="24" font-size="14" fill="#666666" text-anchor="end">{first_date} / {last_date}</text>
+<text x="40" y="{CANVAS_H - 30}" font-size="28" font-weight="bold" fill="{TEXT_COLOR}">{total}<tspan dx="8" font-size="18" font-weight="normal">contributions</tspan></text>
+</svg>'''
 
     return svg
 
 
 def main():
     data = fetch_contributions()
-
     os.makedirs("profile-3d-contrib", exist_ok=True)
     svg = generate_svg(data)
-
     with open("profile-3d-contrib/profile-custom.svg", "w") as f:
         f.write(svg)
-
-    print(f"Generated profile-3d-contrib/profile-custom.svg")
+    print("Generated profile-3d-contrib/profile-custom.svg")
 
 
 if __name__ == "__main__":
