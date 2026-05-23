@@ -3,28 +3,11 @@
     "type": "normal",
     "fileName": "profile-pastel-animate.svg",
     "backgroundColor": "#ffffff",
-    "foregroundColor": "#333333",
-    "strongColor": "#E3000B",
+    "foregroundColor": "#1a1a1a",
+    "strongColor": "#1a1a1a",
     "weakColor": "#f0f0f0",
-    "radarColor": "#006CB766",
+    "radarColor": "#1a1a1a66",
     "growingAnimation": true,
-    "contribColors": [
-      "#f0f0f0",
-      "#F5CD2F",
-      "#00852B",
-      "#006CB7",
-      "#E3000B"
-    ]
-  },
-  {
-    "type": "normal",
-    "fileName": "profile-pastel.svg",
-    "backgroundColor": "#ffffff",
-    "foregroundColor": "#333333",
-    "strongColor": "#E3000B",
-    "weakColor": "#f0f0f0",
-    "radarColor": "#006CB766",
-    "growingAnimation": false,
     "contribColors": [
       "#f0f0f0",
       "#F5CD2F",
