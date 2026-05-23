@@ -35,5 +35,5 @@
 </p>
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-pastel-animate.svg" width="100%" alt="3D contribution graph"/>
+  <img src="./profile-3d-contrib/profile-custom.svg" width="100%" alt="3D contribution graph"/>
 </p>
