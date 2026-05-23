@@ -19,19 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: pastel-settings.json
-      - name: Remove language donut from SVG
-        run: |
-          python3 -c "
-          import re
-          with open('profile-3d-contrib/profile-pastel-animate.svg', 'r') as f:
-              svg = f.read()
-          svg = re.sub(r'<path d=\"M-?[\d.]+,-?[\d.]+A\d+,\d+.*?</path>', '', svg)
-          svg = re.sub(r'<text[^>]*y=\"830\"[^>]*>.*?</text>', '', svg)
-          svg = svg.replace('height=\"850\"', 'height=\"520\"')
-          svg = svg.replace('viewBox=\"0 0 1280 850\"', 'viewBox=\"0 0 1280 520\"')
-          with open('profile-3d-contrib/profile-pastel-animate.svg', 'w') as f:
-              f.write(svg)
-          "
       - name: Commit & Push
         run: |
           git config user.name github-actions
