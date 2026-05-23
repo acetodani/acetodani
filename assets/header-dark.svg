@@ -1,37 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
   <rect width="1200" height="300" fill="#0d1117"/>
 
-  <!-- Gradient accent strip -->
-  <rect x="0" y="0" width="1200" height="4" fill="#E8553D"/>
+  <!-- Playful gradient blobs -->
+  <circle cx="1000" cy="60" r="120" fill="#a78bfa" opacity="0.08"/>
+  <circle cx="1100" cy="180" r="80" fill="#fb923c" opacity="0.06"/>
+  <circle cx="900" cy="220" r="60" fill="#34d399" opacity="0.06"/>
+  <circle cx="100" cy="240" r="70" fill="#f472b6" opacity="0.05"/>
+  <circle cx="200" cy="50" r="50" fill="#38bdf8" opacity="0.06"/>
 
-  <!-- Floating geometric accents -->
-  <circle cx="1050" cy="80" r="60" fill="#E8553D" opacity="0.08"/>
-  <circle cx="1100" cy="150" r="90" fill="#E8553D" opacity="0.05"/>
-  <circle cx="150" cy="250" r="40" fill="#0EA5E9" opacity="0.06"/>
-  <rect x="80" y="60" width="3" height="40" rx="1.5" fill="#E8553D" opacity="0.4"/>
-  <rect x="90" y="75" width="3" height="25" rx="1.5" fill="#0EA5E9" opacity="0.3"/>
+  <!-- Gradient top bar -->
+  <defs>
+    <linearGradient id="topbar" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="25%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="75%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="5" fill="url(#topbar)"/>
+
+  <!-- Scattered shapes -->
+  <rect x="70" y="55" width="8" height="8" rx="2" fill="#a78bfa" opacity="0.4" transform="rotate(15 74 59)"/>
+  <rect x="95" y="80" width="6" height="6" rx="1" fill="#fb923c" opacity="0.3" transform="rotate(-10 98 83)"/>
+  <circle cx="82" cy="100" r="3" fill="#34d399" opacity="0.4"/>
 
   <!-- Name -->
-  <text x="120" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="700" fill="#f0f6fc" letter-spacing="-2">Dani Almalaki</text>
+  <text x="120" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#f0f6fc" letter-spacing="-2">Dani Almalaki</text>
 
   <!-- Tagline -->
   <text x="124" y="195" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="15" fill="#8b949e" letter-spacing="0.5">building things that make data feel good</text>
 
-  <!-- Decorative dots -->
-  <circle cx="124" cy="230" r="4" fill="#E8553D"/>
-  <circle cx="140" cy="230" r="4" fill="#0EA5E9"/>
-  <circle cx="156" cy="230" r="4" fill="#f0f6fc" opacity="0.2"/>
+  <!-- Colorful dots -->
+  <circle cx="124" cy="230" r="5" fill="#f472b6"/>
+  <circle cx="142" cy="230" r="5" fill="#a78bfa"/>
+  <circle cx="160" cy="230" r="5" fill="#38bdf8"/>
+  <circle cx="178" cy="230" r="5" fill="#34d399"/>
+  <circle cx="196" cy="230" r="5" fill="#fb923c"/>
 
-  <!-- Mini bar chart decoration -->
-  <rect x="900" y="160" width="16" height="50" rx="3" fill="#E8553D" opacity="0.2"/>
-  <rect x="922" y="140" width="16" height="70" rx="3" fill="#E8553D" opacity="0.35"/>
-  <rect x="944" y="115" width="16" height="95" rx="3" fill="#E8553D" opacity="0.8"/>
-  <rect x="966" y="130" width="16" height="80" rx="3" fill="#E8553D" opacity="0.5"/>
-  <rect x="988" y="150" width="16" height="60" rx="3" fill="#E8553D" opacity="0.25"/>
-  <rect x="1010" y="165" width="16" height="45" rx="3" fill="#0EA5E9" opacity="0.35"/>
-  <rect x="1032" y="145" width="16" height="65" rx="3" fill="#0EA5E9" opacity="0.2"/>
+  <!-- Playful bar chart -->
+  <rect x="880" y="165" width="18" height="45" rx="9" fill="#f472b6" opacity="0.7"/>
+  <rect x="906" y="140" width="18" height="70" rx="9" fill="#a78bfa" opacity="0.8"/>
+  <rect x="932" y="105" width="18" height="105" rx="9" fill="#38bdf8" opacity="0.9"/>
+  <rect x="958" y="120" width="18" height="90" rx="9" fill="#34d399" opacity="0.8"/>
+  <rect x="984" y="145" width="18" height="65" rx="9" fill="#fb923c" opacity="0.7"/>
+  <rect x="1010" y="155" width="18" height="55" rx="9" fill="#f472b6" opacity="0.5"/>
+  <rect x="1036" y="135" width="18" height="75" rx="9" fill="#a78bfa" opacity="0.6"/>
 
-  <!-- Axis line under bars -->
-  <line x1="895" y1="215" x2="1055" y2="215" stroke="#30363d" stroke-width="1"/>
-  <text x="900" y="232" font-family="'SF Mono', monospace" font-size="8" fill="#484f58">16mm  24  35  50  85  135  200</text>
+  <text x="885" y="228" font-family="'SF Mono', monospace" font-size="8" fill="#484f58">16   24   35   50   85  135  200</text>
 </svg>

@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://almalaki.dev"><img src="https://img.shields.io/badge/almalaki.dev-111?style=flat-square&logo=safari&logoColor=white"/></a>&nbsp;
-  <img src="https://img.shields.io/badge/Amazon-Summer_2026-FF9900?style=flat-square&logo=amazon&logoColor=white"/>
+  <a href="https://almalaki.dev"><img src="https://img.shields.io/badge/almalaki.dev-a78bfa?style=flat-square&logo=safari&logoColor=white"/></a>&nbsp;
+  <img src="https://img.shields.io/badge/Amazon-Summer_2026-fb923c?style=flat-square&logo=amazon&logoColor=white"/>
 </p>
 
 ---
@@ -52,5 +52,5 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=acetodani&bg_color=0d1117&color=e8553d&line=e8553d&point=ffffff&hide_border=true&radius=6&area=true&area_color=e8553d30" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=acetodani&bg_color=0d1117&color=a78bfa&line=a78bfa&point=f472b6&hide_border=true&radius=6&area=true&area_color=a78bfa20" width="100%"/>
 </p>
