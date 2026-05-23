@@ -19,13 +19,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: pastel-settings.json
-      - name: Crop to blocks and radar only
+      - name: Remove language donut from SVG
         run: |
           FILE="profile-3d-contrib/profile-pastel-animate.svg"
           if [ -f "$FILE" ]; then
-            sed -i 's/height="850"/height="520"/' "$FILE"
-            sed -i 's/viewBox="0 0 1280 850"/viewBox="0 0 1280 520"/' "$FILE"
-          fi
+            python3 << 'SCRIPT'
+          import re
+          with open("profile-3d-contrib/profile-pastel-animate.svg", "r") as f:
+              svg = f.read()
+          # Remove all pie chart arc paths (they have M...A...L...Z pattern with large numbers)
+          svg = re.sub(r'<path d="M-?[\d.]+,-?[\d.]+A\d+,\d+.*?</path>', '', svg)
+          # Remove the contributions/stars/forks row at the bottom
+          svg = re.sub(r'<text[^>]*y="830"[^>]*>.*?</text>', '', svg)
+          svg = re.sub(r'<g transform="translate\((608|736)[^"]*"[^>]*>.*?</g>', '', svg)
+          # Shrink height to just blocks + radar
+          svg = svg.replace('height="850"', 'height="520"')
+          svg = svg.replace('viewBox="0 0 1280 850"', 'viewBox="0 0 1280 520"')
+          with open("profile-3d-contrib/profile-pastel-animate.svg", "w") as f:
+              f.write(svg)
+          SCRIPT
       - name: Commit & Push
         run: |
           git config user.name github-actions
