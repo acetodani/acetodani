@@ -1,7 +1,7 @@
 [
   {
     "type": "normal",
-    "fileName": "profile-3d-contrib/profile-pastel-animate.svg",
+    "fileName": "profile-pastel-animate.svg",
     "backgroundColor": "#0d1117",
     "foregroundColor": "#e2e8f0",
     "strongColor": "#e9d5ff",
@@ -18,7 +18,7 @@
   },
   {
     "type": "normal",
-    "fileName": "profile-3d-contrib/profile-pastel.svg",
+    "fileName": "profile-pastel.svg",
     "backgroundColor": "#0d1117",
     "foregroundColor": "#e2e8f0",
     "strongColor": "#e9d5ff",
