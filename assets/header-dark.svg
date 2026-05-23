@@ -1,50 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
-  <rect width="1200" height="300" fill="#0f172a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" fill="none">
+  <rect width="1200" height="340" fill="#0f172a"/>
 
-  <!-- Soft blobs -->
-  <circle cx="1020" cy="70" r="130" fill="#bae6fd" opacity="0.05"/>
-  <circle cx="1130" cy="200" r="90" fill="#fef3c7" opacity="0.04"/>
-  <circle cx="880" cy="250" r="60" fill="#d1fae5" opacity="0.04"/>
-  <circle cx="120" cy="250" r="80" fill="#e0f2fe" opacity="0.03"/>
-  <circle cx="200" cy="40" r="50" fill="#fde68a" opacity="0.03"/>
+  <!-- Chaotic scattered blobs -->
+  <circle cx="180" cy="40" r="35" fill="#bae6fd" opacity="0.08"/>
+  <circle cx="1050" cy="280" r="50" fill="#fde68a" opacity="0.06"/>
+  <circle cx="950" cy="50" r="25" fill="#fbcfe8" opacity="0.08"/>
+  <circle cx="400" cy="300" r="40" fill="#d1fae5" opacity="0.05"/>
+  <circle cx="700" cy="30" r="20" fill="#7dd3fc" opacity="0.06"/>
+  <circle cx="1150" cy="120" r="30" fill="#d1fae5" opacity="0.06"/>
+  <circle cx="80" cy="180" r="18" fill="#fde68a" opacity="0.07"/>
+  <circle cx="550" cy="310" r="28" fill="#bae6fd" opacity="0.05"/>
+  <circle cx="1100" cy="60" r="15" fill="#fbcfe8" opacity="0.07"/>
 
-  <!-- Pastel gradient top bar -->
-  <defs>
-    <linearGradient id="topbar" x1="0" y1="0" x2="1200" y2="0">
-      <stop offset="0%" stop-color="#bae6fd"/>
-      <stop offset="33%" stop-color="#d1fae5"/>
-      <stop offset="66%" stop-color="#fde68a"/>
-      <stop offset="100%" stop-color="#fbcfe8"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="1200" height="5" fill="url(#topbar)"/>
+  <!-- Scattered fun shapes -->
+  <rect x="300" y="20" width="12" height="12" rx="2" fill="#7dd3fc" opacity="0.3" transform="rotate(35 306 26)"/>
+  <rect x="850" y="290" width="10" height="10" rx="2" fill="#fde68a" opacity="0.3" transform="rotate(-20 855 295)"/>
+  <rect x="1000" y="150" width="8" height="8" rx="2" fill="#86efac" opacity="0.3" transform="rotate(50 1004 154)"/>
+  <rect x="150" y="280" width="14" height="14" rx="3" fill="#fbcfe8" opacity="0.2" transform="rotate(15 157 287)"/>
 
-  <!-- Scattered shapes -->
-  <circle cx="75" cy="65" r="5" fill="#bae6fd" opacity="0.4"/>
-  <circle cx="95" cy="88" r="3.5" fill="#fde68a" opacity="0.3"/>
-  <circle cx="68" cy="92" r="4" fill="#d1fae5" opacity="0.3"/>
+  <!-- Stars / sparkles -->
+  <polygon points="650,60 653,53 656,60 663,60 657,65 659,72 653,67 647,72 649,65 643,60" fill="#fde68a" opacity="0.4"/>
+  <polygon points="1080,200 1082,196 1084,200 1088,200 1085,203 1086,207 1082,204 1078,207 1079,203 1076,200" fill="#7dd3fc" opacity="0.3"/>
 
-  <!-- Name -->
-  <text x="120" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#f1f5f9" letter-spacing="-2">Dani Almalaki</text>
+  <!-- Wavy line decoration -->
+  <path d="M 0 320 Q 150 300 300 315 Q 450 330 600 310 Q 750 290 900 315 Q 1050 340 1200 310" stroke="#bae6fd" stroke-width="2" fill="none" opacity="0.15"/>
+  <path d="M 0 330 Q 200 310 400 325 Q 600 340 800 320 Q 1000 300 1200 325" stroke="#fde68a" stroke-width="1.5" fill="none" opacity="0.1"/>
 
-  <!-- Tagline -->
-  <text x="124" y="195" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="15" fill="#7dd3fc" opacity="0.7" letter-spacing="0.5">building things that make data feel good</text>
+  <!-- Name — big and off-center -->
+  <text x="80" y="160" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="72" font-weight="900" fill="#f1f5f9" letter-spacing="-3">dani almalaki</text>
 
-  <!-- Pastel dots -->
-  <circle cx="124" cy="230" r="5" fill="#7dd3fc"/>
-  <circle cx="142" cy="230" r="5" fill="#86efac"/>
-  <circle cx="160" cy="230" r="5" fill="#fde68a"/>
-  <circle cx="178" cy="230" r="5" fill="#fbcfe8"/>
-  <circle cx="196" cy="230" r="5" fill="#bae6fd"/>
+  <!-- Chaotic tagline bits scattered around -->
+  <text x="85" y="200" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="13" fill="#64748b">cs @ uw-madison</text>
+  <text x="290" y="200" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="13" fill="#7dd3fc">·</text>
+  <text x="310" y="200" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="13" fill="#64748b">photographer</text>
+  <text x="445" y="200" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="13" fill="#7dd3fc">·</text>
+  <text x="465" y="200" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="13" fill="#64748b">data viz nerd</text>
 
-  <!-- Soft bar chart -->
-  <rect x="880" y="165" width="20" height="45" rx="10" fill="#bae6fd" opacity="0.5"/>
-  <rect x="908" y="140" width="20" height="70" rx="10" fill="#7dd3fc" opacity="0.6"/>
-  <rect x="936" y="100" width="20" height="110" rx="10" fill="#38bdf8" opacity="0.7"/>
-  <rect x="964" y="115" width="20" height="95" rx="10" fill="#86efac" opacity="0.5"/>
-  <rect x="992" y="140" width="20" height="70" rx="10" fill="#fde68a" opacity="0.5"/>
-  <rect x="1020" y="152" width="20" height="58" rx="10" fill="#fbcfe8" opacity="0.4"/>
-  <rect x="1048" y="130" width="20" height="80" rx="10" fill="#bae6fd" opacity="0.3"/>
+  <!-- Fun annotation arrows / doodles -->
+  <text x="700" y="140" font-family="'SF Mono', monospace" font-size="11" fill="#7dd3fc" opacity="0.6">← currently adding ML to things</text>
+  <text x="700" y="165" font-family="'SF Mono', monospace" font-size="11" fill="#86efac" opacity="0.6">← too many camera lenses</text>
+  <text x="700" y="190" font-family="'SF Mono', monospace" font-size="11" fill="#fde68a" opacity="0.6">← amazon intern summer '26</text>
 
-  <text x="885" y="228" font-family="'SF Mono', monospace" font-size="8" fill="#475569">16   24   35   50   85  135  200</text>
+  <!-- Colorful dots cluster -->
+  <circle cx="85" cy="240" r="6" fill="#7dd3fc"/>
+  <circle cx="103" cy="237" r="4" fill="#fde68a"/>
+  <circle cx="117" cy="242" r="5" fill="#86efac"/>
+  <circle cx="134" cy="238" r="3.5" fill="#fbcfe8"/>
+  <circle cx="146" cy="243" r="4.5" fill="#bae6fd"/>
 </svg>
