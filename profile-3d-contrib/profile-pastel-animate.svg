@@ -3,18 +3,18 @@
 .stroke-fg { stroke: #1a1a1a; }
 .fill-bg { fill: #ffffff; }
 .stroke-bg { stroke: #ffffff; }
-.fill-strong { fill: #1a1a1a; }
-.fill-weak { fill: #f0f0f0; }
-.stroke-weak { stroke: #f0f0f0; }
+.fill-strong { fill: #006CB7; }
+.fill-weak { fill: #e2e8f0; }
+.stroke-weak { stroke: #e2e8f0; }
 .radar {
 stroke-width: 4px;
-stroke: #1a1a1a66;
-fill: #1a1a1a66;
+stroke: #006CB7aa;
+fill: #006CB7aa;
 fill-opacity: 0.5;
 }
-.cont-top-0 { fill: rgb(240, 240, 240); }
-.cont-left-0 { fill: rgb(201, 201, 201); }
-.cont-right-0 { fill: rgb(168, 168, 168); }
+.cont-top-0 { fill: rgb(226, 232, 240); }
+.cont-left-0 { fill: rgb(189, 194, 201); }
+.cont-right-0 { fill: rgb(158, 162, 168); }
 .cont-top-1 { fill: rgb(245, 205, 47); }
 .cont-left-1 { fill: rgb(205, 172, 39); }
 .cont-right-1 { fill: rgb(172, 144, 33); }
