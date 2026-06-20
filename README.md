@@ -18,8 +18,6 @@
 ```
 🎓  cs @ uw-madison (sophomore)
 💼  amazon sde intern — summer 2026
-📷  sony a7iv shooter with too many primes
-🔨  building glassstat — adding CLIP ML pipeline rn
 ```
 
 ---
