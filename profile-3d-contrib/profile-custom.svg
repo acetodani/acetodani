@@ -368,6 +368,7 @@
 <polygon points="774.4,626.0 786.5,619.0 798.6,626.0 786.5,633.0" fill="#f0f0f0" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="774.4,626.0 786.5,633.0 786.5,635.0 774.4,628.0" fill="#c4c4c4" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="786.5,633.0 798.6,626.0 798.6,628.0 786.5,635.0" fill="#9c9c9c" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon>
 <polygon points="760.5,634.0 772.7,627.0 784.8,634.0 772.7,641.0" fill="#f0f0f0" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="760.5,634.0 772.7,641.0 772.7,643.0 760.5,636.0" fill="#c4c4c4" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="772.7,641.0 784.8,634.0 784.8,636.0 772.7,643.0" fill="#9c9c9c" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon>
 <polygon points="857.5,591.9 869.7,584.9 881.8,591.9 869.7,598.9" fill="#E3000B" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="857.5,591.9 869.7,598.9 869.7,603.0 857.5,596.0" fill="#ba0009" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="869.7,598.9 881.8,591.9 881.8,596.0 869.7,603.0" fill="#930007" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon>
+<polygon points="843.7,602.0 855.8,595.0 867.9,602.0 855.8,609.0" fill="#f0f0f0" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="843.7,602.0 855.8,609.0 855.8,611.0 843.7,604.0" fill="#c4c4c4" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon><polygon points="855.8,609.0 867.9,602.0 867.9,604.0 855.8,611.0" fill="#9c9c9c" stroke="none"><animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/></polygon>
 </g>
 <g>
 <polygon points="1020.0,220.0 1048.5,240.7 1037.6,274.3 1002.4,274.3 991.5,240.7" fill="none" stroke="#999999" stroke-width="0.8" stroke-dasharray="4,4"/>
@@ -392,6 +393,6 @@
 <text x="917.1" y="391.6" font-size="16" font-weight="bold" fill="#1a1a1a" text-anchor="end" dominant-baseline="middle" font-family="sans-serif">Review</text>
 <text x="853.6" y="195.9" font-size="16" font-weight="bold" fill="#1a1a1a" text-anchor="end" dominant-baseline="middle" font-family="sans-serif">Repo</text>
 </g>
-<text x="1260" y="24" font-size="14" fill="#666666" text-anchor="end">2025-07-13 / 2026-07-12</text>
+<text x="1260" y="24" font-size="14" fill="#666666" text-anchor="end">2025-07-13 / 2026-07-13</text>
 <text x="40" y="800" font-size="28" font-weight="bold" fill="#1a1a1a">17<tspan dx="8" font-size="18" font-weight="normal">contributions</tspan></text>
 </svg>
